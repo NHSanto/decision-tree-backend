@@ -23,5 +23,15 @@ This project implements a decision tree processing backend in **TypeScript**. Th
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repository-url.git
+https://github.com/NHSanto/decision-tree-backend.git
 cd decision-tree-backend
+
+### Run the project
+
+run: npm install
+
+Create .env file in the root directory and add the following: ACTIONS=SendEmail,SendSMS,Condition,Loop
+
+For Running the app: npm run dev
+
+For testing using jest: npx jest
