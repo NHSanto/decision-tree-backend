@@ -1,0 +1,27 @@
+# Decision Tree Processing Backend
+
+This project implements a decision tree processing backend in **TypeScript**. The backend allows customers to define and execute business logic using a decision tree structure. The decision tree supports several action types and is extensible for future action additions.
+
+## Features
+
+- **Serialization & Deserialization**: Decision trees can be represented in JSON format and parsed back into executable structures.
+- **Supported Actions**:
+  - **SendEmail**: Sends an email (logs a message with sender/receiver details).
+  - **SendSMS**: Sends an SMS (logs a message with the phone number).
+  - **Condition**: Evaluates JavaScript expressions and branches based on the result.
+  - **Loop**: Repeats a subtree a specified number of times.
+- **Extensibility**: Easily register new actions via configuration.
+- **Backend Execution**: A backend service that receives a JSON decision tree, deserializes it, and executes the defined actions.
+
+## Prerequisites
+
+- **Node.js** (>=20.x)
+- **npm** or **yarn**
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-repository-url.git
+cd decision-tree-backend
